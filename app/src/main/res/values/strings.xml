@@ -5,4 +5,5 @@
     <string name="label_numero_uno">Digite el número uno</string>
     <string name="label_numero_dos">Digite el número dos</string>
     <string name="Calcular">calcular</string>
+    <string name="limpiar">limpiar</string>
 </resources>

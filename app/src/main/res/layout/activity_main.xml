@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -32,12 +34,28 @@
         android:hint="@string/label_numero_dos"
         android:inputType="numberSigned|numberDecimal" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="calcular"
-        android:text="@string/Calcular" />
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="calcular"
+            android:text="@string/Calcular" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/limpiar" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtResultado"
@@ -46,4 +64,5 @@
         android:gravity="center_horizontal"
         android:textSize="24sp"
         android:textStyle="bold" />
+
 </LinearLayout>
