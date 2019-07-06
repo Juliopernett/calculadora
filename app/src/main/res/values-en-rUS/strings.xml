@@ -11,4 +11,7 @@
     <string name="resta">Substrac</string>
     <string name="multiplicacion">Multiplication</string>
     <string name="division">Divide</string>
+    <string name="error_1">Type the number one</string>
+    <string name="error_3">The denominator can not be zero</string>
+    <string name="error_2">Type the number two</string>
 </resources>
